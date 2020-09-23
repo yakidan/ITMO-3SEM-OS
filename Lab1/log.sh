@@ -1,6 +1,7 @@
 #!/bin/bash
-source ./error
-! [[ -f "/var/log/anaconda/X.log"]] && error 3;
+source ./error.sh
+function log(){
+! [[ -f "/var/log/anaconda/X.log" ]] && error "такого флага не существует" "$1";
 text=$(cat /var/log/anaconda/X.log)
  IFS=$'\n'
  YELLOW="\e[1;33m"
@@ -22,4 +23,4 @@ cat output;
 rm output;
 cat output2;
 rm output2;
-
+}
