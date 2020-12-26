@@ -1,0 +1,1 @@
+del F*.txt V*.txt T*.txt L*.txt

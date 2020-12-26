@@ -1,0 +1,1 @@
+schtasks /CREATE /SC Minute /TN CopyPast /TR "./command3.cmd"

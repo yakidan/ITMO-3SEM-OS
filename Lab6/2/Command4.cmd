@@ -1,0 +1,1 @@
+SCTASKS /del /TN CopyPast 

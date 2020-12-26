@@ -1,0 +1,1 @@
+sc query state=active type=service > services.txt
